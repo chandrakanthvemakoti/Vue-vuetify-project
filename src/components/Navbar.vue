@@ -15,9 +15,7 @@
         <span>Dashboard</span>
     </v-btn>
   </v-toolbar>
-  <v-navigation-drawer app v-model="drawer" dark> 
-  hello
-  </v-navigation-drawer>
+
   </nav>
 </template>
 
