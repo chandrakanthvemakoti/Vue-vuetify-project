@@ -12,7 +12,7 @@
         <router-link to="/login" style="color:white;text-decoration:none"><span>Sign In</span></router-link>
     </v-btn>
     <v-btn flat color="indigo">
-        <span>Dashboard</span>
+        <router-link to="/dashboard" style="color:white;text-decoration:none"><span>Dashboard</span></router-link>
     </v-btn>
   </v-toolbar>
 

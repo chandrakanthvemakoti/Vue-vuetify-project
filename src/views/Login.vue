@@ -20,7 +20,7 @@
       @input="$v.password.$touch()"
       @blur="$v.password.$touch()"
     ></v-text-field>
-    <v-btn>Submit</v-btn>
+    <v-btn @click="submit">Submit</v-btn>
   </form></v-container>
 
 </template>
