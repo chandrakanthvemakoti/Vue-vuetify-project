@@ -6,7 +6,7 @@
     </v-toolbar-title>
     <v-spacer></v-spacer>
     <v-btn flat color="indigo">
-        <span><router-link to="/register" style="color:white;text-decoration:none">Sign Up</router-link></span>
+        <router-link to="/register" style="color:white;text-decoration:none"><span>Sign Up</span></router-link>
     </v-btn>
     <v-btn flat color="indigo">
         <span>Sign In</span>
