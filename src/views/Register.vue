@@ -1,7 +1,7 @@
 <template>
 
 <v-container>
-    <h1>USER REGISTRATION</h1>
+    <h1>REGISTRATION</h1>
   <form>
     <v-text-field
       v-model="name"
@@ -169,7 +169,7 @@ required
     methods: {
       submit () {
         this.$v.$touch()
-        this.$routes.push({name:'login'})
+        this.$router.push({name:'login'})
       },
       clear () {
         this.$v.$reset()

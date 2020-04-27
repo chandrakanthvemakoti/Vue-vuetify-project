@@ -9,7 +9,7 @@
         <router-link to="/register" style="color:white;text-decoration:none"><span>Sign Up</span></router-link>
     </v-btn>
     <v-btn flat color="indigo">
-        <span>Sign In</span>
+        <router-link to="/login" style="color:white;text-decoration:none"><span>Sign In</span></router-link>
     </v-btn>
     <v-btn flat color="indigo">
         <span>Dashboard</span>

@@ -3,7 +3,9 @@
     <h1>WELCOME TO VUE JS</h1>
     <div class="cta">
     <router-link to="/register" style="text-decoration:none">Sign Up</router-link>
+    <router-link to="/login" style="text-decoration:none">Sign In</router-link>
     </div>
+    
   </div>
 </template>
 
