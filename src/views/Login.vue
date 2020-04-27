@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="col-md-6">
     <h1>LOGIN</h1>
   <form>
     <v-text-field
