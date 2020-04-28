@@ -39,7 +39,7 @@
       :error-messages="selectErrors"
       label="Role"
       required
-      @change="$v.select.$touch()"
+     
       @blur="$v.select.$touch()"
     ></v-select>
 

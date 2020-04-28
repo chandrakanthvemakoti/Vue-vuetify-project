@@ -7,9 +7,9 @@
        <div>
       <Table :headers="headers" :search="search"  :desserts="desserts"/>
       </div>
-<dir>
-  <Formtable/>
-</dir>
+<div>
+  <Formtable @myemit="desserts=$event"/>
+</div>
 
        </v-app>
        

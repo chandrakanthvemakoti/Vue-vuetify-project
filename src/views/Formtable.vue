@@ -30,7 +30,9 @@
    
 
    </v-select>
-    <v-btn @click="submit">Submit</v-btn>
+    <v-btn @click="submit"
+    :disabled="$v.$invalid"
+     >Submit</v-btn>
     <v-btn @click="clear">
         Clear
     </v-btn>
@@ -44,6 +46,7 @@ export default {
 
   data(){
     return{
+        id:null,
       name:'',
       email:'',
       role:'',
@@ -52,10 +55,14 @@ export default {
           'vue developer',
           'react developer',
           'node developer'
-      ]
+      ],
+      employee:[]
     }
 
    
+  },
+  mounted(){
+  this.id=this._uid
   },
    computed: {
 
@@ -89,7 +96,20 @@ export default {
    role:{required}
     },
     methods:{
-      submit(){
+      submit: function(e){
+          e.preventDefault();
+          var obj={
+              name:this.name,
+              email:this.email,
+              role:this.role
+          };
+          this.employee.push(obj);
+          this.$emit('myemit',this.employee);
+          this.name='';
+          this.email='';
+          this.role='';
+         
+
         
       },
 
