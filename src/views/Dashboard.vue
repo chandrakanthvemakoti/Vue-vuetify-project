@@ -4,7 +4,13 @@
        <div>
            <h1>MY DASHBOARD </h1>
        </div>
+       <div>
       <Table :headers="headers" :search="search"  :desserts="desserts"/>
+      </div>
+<dir>
+  <Formtable/>
+</dir>
+
        </v-app>
        
    </v-container>
@@ -12,7 +18,8 @@
 
 
 <script>
-import Table from './Table.vue'
+import Formtable from './Formtable.vue';
+import Table from './Table.vue';
   export default {
     data () {
       return {
@@ -39,7 +46,8 @@ import Table from './Table.vue'
     },
 
     components:{
-        Table
+        Table,
+        Formtable
     }
   }
 </script>
