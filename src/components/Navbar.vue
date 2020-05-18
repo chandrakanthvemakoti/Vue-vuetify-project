@@ -5,14 +5,14 @@
         <span>VUE JS PROJECT</span>
     </v-toolbar-title>
     <v-spacer></v-spacer>
-    <v-btn flat color="indigo">
-        <span><router-link to="/register" style="color:white;text-decoration:none">Sign Up</router-link></span>
+    <v-btn text color="indigo">
+        <router-link to="/register" style="color:white;text-decoration:none"><span>Sign Up</span></router-link>
     </v-btn>
     <v-btn text color="indigo">
-        <span>Sign In</span>
+        <router-link to="/login" style="color:white;text-decoration:none"><span>Sign In</span></router-link>
     </v-btn>
     <v-btn text color="indigo">
-        <span>Dashboard</span>
+        <router-link to="/dashboard" style="color:white;text-decoration:none"><span>Dashboard</span></router-link>
     </v-btn>
   </v-toolbar>
 
